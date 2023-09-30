@@ -1,114 +1,36 @@
 <!DOCTYPE html>
 <head>
-	<title>...</title>
+	<title>PLEASE ENTER KEY!</title>
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="fonts.css">
 </head>
 <body>
+	<script>
+	function checkKey() {
+					const keygenval = document.getElementById("keygen").value
+					if (keygenval == "A7B6-1BC6-2CD3-F1D2") {
+						const keyAccept = document.getElementById("keystat");
+						const accepted = document.createTextNode("ACCEPTED! ");
+						const aud = document.getElementById("aud");
+						aud.style.display = "block";
+						keyAccept.appendChild(accepted)
+					}
+					else {
+						const keyAccept = document.getElementById("keystat");
+						const accepted = document.createTextNode("INVALID KEY ");
+						keyAccept.appendChild(accepted)
+					}	
+	}</script>
 	<div id="determination">
 		<center>
+			<h1>Please enter your key here.</h1>
+			<input type="text" id="keygen"/>
 			<br>
 			<br>
+			<input type="button" id="keyenter" value="Enter Key" onclick="checkKey()"></input>
 			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			
-			<h1>L̷̢̡͕͓̖̝̟̪̣͙̇́̈́͛̿̍̅̏̀̎͘͝ͅẽ̸̜̰̦̊ẗ̴̢̡̟͓̩̘̰͎̮̪͓̘̞͎͔͇͚̠́͛́́̋́̌̃̈́̏͒̈́͆̀͗́̇̕ ̷̡̡͍̻̱̺̐̃̋̀́͒́͛̂̾̿͘͜m̴̼̹̰͍̲͎̦͍̂e̷̬͉͕̣̗̤̗͋̀̀̐͒̉̄͐̔̄͌͐̊̃̈̕͘ ̶̢̝͚̤̫̻̯̜̻͔͍͎̍́Ǫ̸̟̥̣̳̤̩̫̻̠̣̯̅̾̍̉̇̈́̾̀̋̈́́͘̚ͅU̴̢̻͍̩̘̟̲̫̟̙̝̦̠̘̰̇́̍͐̾͌͆̋͛͗͆̽̓̕̕͝ͅT̶̻͓̼̺̰̬͚̞͇͖̯̭̘̤͎̪̮̟̄̽͂̐̓̒͗̚ ̵̢̨̨̢̧̭̝͎̣̰͇̤̹̜̳̭̟͈͂̓̀̆̏̎̓̎̇̿͑̈́̀̆̀̕̚̕O̴̡̩̺̪̩͈͎̫̰̟͚̍́̋͊͗̂́͑̎͌̑́͐̈́̉͝͠F̴̯͓̦̺̣͎͎̜̏͗̉̆͝͠͠ ̷̹̣̻̺̝͙̜̯̙̣̘̒́̒͜H̸̡̨͕͎̟͙͈͓̪̝͛́̄̋͝E̷̢̢̜͎̘̰̳̠̜͖̬̮̙͓̞͖̝̫͑͊̍͂́̐̔̉͘R̸̢̛̟̳̂́̂̾̔͋̐̿͘͘͠Ḛ̶̢̣͖͕͖̳̬̼̖̻̼͓̥̈ͅ</h1>
+			<div id="aud" class="inv"><audio controls src="Him.mp3"></div>
+			<h1 id="keystat"></h1>
 		</center>
 	</div>	
 </body>	

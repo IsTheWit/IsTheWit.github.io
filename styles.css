@@ -24,3 +24,7 @@ a:active {
 	color: red;
 }
 */
+.inv {
+	visible: false;
+	display: none;
+}	
